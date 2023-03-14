@@ -1,2 +1,2 @@
 # calculator api
- An calculator api with sanic framework
+ A calculator api with sanic framework

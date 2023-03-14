@@ -7,7 +7,7 @@ app.blueprint(api)
 @app.get('/about')
 async def about(request):
     return response.json({
-        "name": "Calculator API whit Sanic framework",
+        "name": "Calculator API with Sanic framework",
         "version": "1.0",
         "authors": ["João Henrique", "Thiago", "Felipe"],
         "private": True,
