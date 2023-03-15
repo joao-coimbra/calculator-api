@@ -351,10 +351,8 @@ And the API will respond with a JSON body like this:
 
 ## :gem: Authors
 
-[![name](https://avatars.githubusercontent.com/u/61300191?s=68&v=4)](https://github.com/joao-coimbra)
-[![name](https://avatars.githubusercontent.com/u/64169738?s=68&v=4)](https://github.com/alvarezfelipe)
-
-Feito com ❤️ por [João Coimbra](mail:joao.benatti.coimbra@gmail.com)
+[![name](https://avatars.githubusercontent.com/u/61300191?s=80&v=4)](https://github.com/joao-coimbra)
+[![name](https://avatars.githubusercontent.com/u/64169738?s=80&v=4)](https://github.com/alvarezfelipe)
 
 ## :scroll: License
 
