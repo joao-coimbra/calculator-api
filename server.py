@@ -16,7 +16,7 @@ async def about(request):
         },
         "dependencies": {
             "python": "^3.10.4",
-            "sanic": "22.9"
+            "sanic": "22.12.0"
         }
     })
 
