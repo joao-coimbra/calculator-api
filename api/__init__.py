@@ -29,35 +29,42 @@ async def multiply(request):
     return response.json({"result": reduce(lambda x, y: x * y, nums)})
 
 
-@api.route("/divide/<dividend:float>/<divisor:int>")
-async def divide(request, dividend: float, divisor: int):
+@api.route("/divide", methods=["POST"])
+async def divide(request):
+    num = request.json.get("num")
+    divisor = request.json.get("divisor")
+    if num is None or divisor is None:
+        raise SanicException("Missing required parameters")
     if divisor == 0:
         raise SanicException("Impossible divide by zero")
-    return response.json({"result": dividend / divisor})
+    return response.json({"result": num / divisor})
 
 
-@api.route("/sqrt/<num:int>")
-async def sqrt(request, num: int):
+@api.route("/sqrt", methods=["POST"])
+async def sqrt(request):
+    num = request.json.get("num")
+    if num is None:
+        raise SanicException("Missing required parameters")
     if num < 0:
         raise SanicException("Cannot take square root of negative number")
     return response.json({"result": math.sqrt(num)})
 
 
-@api.route("/power/<num:float>/<power:int>")
-async def power(request, num: float, power: int):
-    return response.json({"result": num ** power})
+@api.route("/power/<base:float>/<exponent:int>")
+async def power(request, base: float, exponent: int):
+    return response.json({"result": base ** exponent})
 
 
-@api.route("/arithmetic_mean", methods=["POST"])
-async def arithmetic_mean(request):
+@api.route("/mean", methods=["POST"])
+async def mean(request):
     nums = request.json.get("nums")
     if nums is None or not isinstance(nums, list):
         raise SanicException("Missing or invalid input parameter")
     return response.json({"result": sum(nums) / len(nums)})
 
 
-@api.route("/harmonic_mean", methods=["POST"])
-async def harmonic_mean(request):
+@api.route("/hmean", methods=["POST"])
+async def hmean(request):
     nums = request.json.get("nums")
     if nums is None or not isinstance(nums, list):
         raise SanicException("Missing or invalid input parameter")
