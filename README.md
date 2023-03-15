@@ -7,25 +7,25 @@ This is a simple calculator API built with Sanic.
 ## Table of Contents
 
 -   [Resume](#pushpin-resume)
+-   [Technology](#zap-technology)
 -   [Installation](#wrench-installation)
--   [Tecnologies](#zap-technologies)
 -   [Endpoints](#round_pushpin-endpoints)
-    -   [Addition](#addition)
-    -   [Subtraction](#subtraction)
-    -   [Multiplication](#multiplication)
-    -   [Square root](#square-root)
-    -   [Arithmetic mean](#arithmetic-mean)
-    -   [Harmonic mean](#harmonic-mean)
-    -   [Moda](#moda)
+    1.   [Addition](#addition)
+    1.   [Subtraction](#subtraction)
+    1.   [Multiplication](#multiplication)
+    1.   [Square root](#square-root)
+    1.   [Arithmetic mean](#arithmetic-mean)
+    1.   [Harmonic mean](#harmonic-mean)
+    1.   [Moda](#moda)
 -   [Usage](#hammer_and_wrench-usage)
 -   [Authors](#gem-authors)
 -   [License](#scroll-license)
 
 ## :pushpin: Resume
 
-This is a simple calculator API built using the Sanic framework in Python. It provides endpoints for performing basic arithmetic operations, calculating square roots and powers, calculating mean, harmonic mean and moda.
+>   This is a simple calculator API built using the Sanic framework in Python. It provides endpoints for performing basic arithmetic operations, calculating square roots and powers, calculating mean, harmonic mean and moda.
 
-## :zap: Tech
+## :zap: Technology
 
 Technology used within the project:
 
