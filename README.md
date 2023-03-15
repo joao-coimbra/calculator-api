@@ -72,7 +72,7 @@ POST /api/add
 
 | Parameter | Type    | Description                  |
 | :-------- | :------ | :--------------------------- |
-| `nums`    | `array` | **Required** list of numbers |
+| `nums`    | `array` | **Required**. list of numbers |
 
 Request Body:
 
@@ -102,7 +102,7 @@ POST /api/subtract
 
 | Parameter | Type    | Description                  |
 | :-------- | :------ | :--------------------------- |
-| `nums`    | `array` | **Required** list of numbers |
+| `nums`    | `array` | **Required**. list of numbers |
 
 Request Body:
 
@@ -132,7 +132,7 @@ POST /api/multiply
 
 | Parameter | Type    | Description                  |
 | :-------- | :------ | :--------------------------- |
-| `nums`    | `array` | **Required** list of numbers |
+| `nums`    | `array` | **Required**. list of numbers |
 
 Request Body:
 
@@ -162,8 +162,8 @@ POST /api/divide
 
 | Parameter | Type    | Description                       |
 | :-------- | :------ | :-------------------------------- |
-| `num`     | `float` | **Required** number to be divided |
-| `divisor` | `int`   | **Required** divisor number       |
+| `num`     | `float` | **Required**. number to be divided |
+| `divisor` | `int`   | **Required**. divisor number       |
 
 Request Body:
 
@@ -191,7 +191,7 @@ POST /api/sqrt
 
 | Parameter | Type  | Description                            |
 | :-------- | :---- | :------------------------------------- |
-| `num`     | `int` | **Required** number to get square root |
+| `num`     | `int` | **Required**. number to get square root |
 
 Request Body:
 
@@ -221,8 +221,8 @@ POST /api/power
 
 | Parameter  | Type    | Description                       |
 | :--------- | :------ | :-------------------------------- |
-| `base`     | `float` | **Required** number to get power  |
-| `exponent` | `int`   | **Required** calculation exponent |
+| `base`     | `float` | **Required**. number to get power  |
+| `exponent` | `int`   | **Required**. calculation exponent |
 
 Request Body:
 
@@ -253,7 +253,7 @@ POST /api/hmean
 
 | Parameter | Type    | Description                  |
 | :-------- | :------ | :--------------------------- |
-| `nums`    | `array` | **Required** list of numbers |
+| `nums`    | `array` | **Required**. list of numbers |
 
 Request Body:
 
@@ -283,7 +283,7 @@ POST /api/mean
 
 | Parameter | Type    | Description                  |
 | :-------- | :------ | :--------------------------- |
-| `nums`    | `array` | **Required** list of numbers |
+| `nums`    | `array` | **Required**. list of numbers |
 
 Request Body:
 
@@ -313,7 +313,7 @@ POST /api/moda
 
 | Parameter | Type    | Description                  |
 | :-------- | :------ | :--------------------------- |
-| `nums`    | `array` | **Required** list of numbers |
+| `nums`    | `array` | **Required**. list of numbers |
 
 Request Body:
 
