@@ -333,7 +333,7 @@ Response Body:
 
 ## :hammer_and_wrench: Usage
 
-To use this API, you can send HTTP requests to the appropriate endpoints. For example, to add two numbers together, you can send a `POST` request to the `/api/add` endpoint with a JSON body like this:
+To use this API, you can send HTTP requests to the appropriate endpoints. For example, to add two numbers together, you can send a ***POST*** request to the _/api/add_ endpoint with a JSON body like this:
 
 ```json
 {
