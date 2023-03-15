@@ -221,7 +221,7 @@ POST /api/power
 
 | Parameter  | Type    | Description                       |
 | :--------- | :------ | :-------------------------------- |
-| `base`     | `float` | **Required**. number to get power  |
+| `base`     | `float` | **Required**. number to get its power  |
 | `exponent` | `int`   | **Required**. calculation exponent |
 
 Request Body:
