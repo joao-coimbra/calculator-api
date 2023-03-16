@@ -248,7 +248,7 @@ Response Body:
 Calculates the arithmetic mean of a list of numbers.
 
 ```http
-POST /api/hmean
+POST /api/mean
 ```
 
 | Parameter | Type    | Description                  |
@@ -278,7 +278,7 @@ Response Body:
 Calculates the harmonic mean of a list of numbers.
 
 ```http
-POST /api/mean
+POST /api/hmean
 ```
 
 | Parameter | Type    | Description                  |
