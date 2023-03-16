@@ -3,3 +3,4 @@
 .vscode/
 aws_scripts/output_files/
 aws_scripts/source_files/
+.vercel
