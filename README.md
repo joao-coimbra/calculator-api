@@ -337,7 +337,7 @@ To use this API, you can send HTTP requests to the appropriate endpoints. For ex
 
 ```json
 {
-  "nums": [5, 3, 7]
+  "nums": [5, 2]
 }
 ```
 
@@ -345,7 +345,7 @@ And the API will respond with a JSON body like this:
 
 ```json
 {
-  "result": 15
+  "result": 7
 }
 ```
 
@@ -353,6 +353,7 @@ And the API will respond with a JSON body like this:
 
 [![name](https://avatars.githubusercontent.com/u/61300191?s=80&v=4)](https://github.com/joao-coimbra)
 [![name](https://avatars.githubusercontent.com/u/64169738?s=80&v=4)](https://github.com/alvarezfelipe)
+[![name](https://avatars.githubusercontent.com/u/126487510?s=80)](https://github.com/thiagoRocha534)
 
 ## :scroll: License
 
