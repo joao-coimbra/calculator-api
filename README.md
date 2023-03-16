@@ -1,4 +1,4 @@
-# Calculator API
+# Sanic Calculator
 
 This is a simple calculator API built with Sanic.
 
@@ -36,7 +36,7 @@ Technology used within the project:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/joao-coimbra/calculator-api.git
+    git clone https://github.com/joao-coimbra/sanic-calculator.git
     ```
 
 2. Install the dependencies:
