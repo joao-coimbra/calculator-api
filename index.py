@@ -5,14 +5,12 @@ app = Sanic(__name__)
 app.blueprint(api)
 
 
-@app.get('/')
-@app.get('/about')
-async def about(request):
-    return response.json({
-        "name": "Calculator API with Sanic framework",
-        "version": "1.0",
-        "private": True,
-    })
+@app.route("/")
+def display(request):
+    return response.file('index.html')
+
 
 if __name__ == "__main__":
-    app.run()
+    app.run(
+        debug=True
+    )
