@@ -29,7 +29,7 @@ This is a simple calculator API built with Sanic.
 
 Technology used within the project:
 
--   [Sanic](https://sanic.dev): Version 22.12.0
+-   [Sanic](https://sanic.dev): Version ^19.6.0
 
 ## :wrench: Installation
 
