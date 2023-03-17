@@ -51,7 +51,7 @@ async def sqrt(request):
 
 
 @api.route("/power", methods=["POST"])
-async def power(request, base: float, exponent: int):
+async def power(request):
     base = request.json.get("base")
     exponent = request.json.get("exponent")
     if base is None or exponent is None:
