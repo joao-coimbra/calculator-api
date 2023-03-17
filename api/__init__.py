@@ -50,8 +50,12 @@ async def sqrt(request):
     return response.json({"result": math.sqrt(num)})
 
 
-@api.route("/power/<base:float>/<exponent:int>")
+@api.route("/power", methods=["POST"])
 async def power(request, base: float, exponent: int):
+    base = request.json.get("base")
+    exponent = request.json.get("exponent")
+    if base is None or exponent is None:
+        raise SanicException("Missing required parameters")
     return response.json({"result": base ** exponent})
 
 
