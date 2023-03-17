@@ -5,6 +5,7 @@ import math
 
 api = Blueprint('api', url_prefix='/api')
 
+
 @api.route("/add", methods=["POST"])
 async def add(request):
     nums = request.json.get("nums")
@@ -72,7 +73,6 @@ async def hmean(request):
     nums = request.json.get("nums")
     if nums is None or not isinstance(nums, list):
         raise SanicException("Missing or invalid input parameter")
-
     return response.json({"result": len(nums) / sum(map(lambda x: x**-1, nums))})
 
 
@@ -88,4 +88,3 @@ async def moda(request):
     return response.json(
         {"result": [x for x, y in freq.items() if y == max(freq.values())]}
     )
-
