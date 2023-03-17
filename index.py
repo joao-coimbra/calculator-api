@@ -7,7 +7,7 @@ app.blueprint(api)
 
 @app.route("/")
 def display(request):
-    return response.file('index.html')
+    return response.file('views/index.html')
 
 
 if __name__ == "__main__":
