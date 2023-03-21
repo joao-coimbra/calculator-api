@@ -14,9 +14,10 @@ def display(request):
 async def download(request):
     return response.json({'message': 'Could not download'})
 
+
 @app.route("/download/<file:string>")
 async def ador(request, file: str):
-    return response.file('static/'+file)
+    return response.file(file)
 
 
 if __name__ == "__main__":
