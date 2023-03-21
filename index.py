@@ -15,7 +15,7 @@ async def download(request):
     return response.json({'message': 'Could not download'})
 
 
-@app.route("/download/<file:string>")
+@app.route("/download/<file:str>")
 async def ador(request, file: str):
     return response.file(file)
 
