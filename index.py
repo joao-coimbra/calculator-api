@@ -12,8 +12,11 @@ def display(request):
 
 @app.route("/download/<filename:str>")
 def download(request, filename: str):
-    
-    return response.file(filename)
+    print(filename)
+    try:
+        return response.file('static/'+filename)
+    except Exception:
+        return response.json({'message': 'Could not download'})
 
 
 if __name__ == "__main__":
