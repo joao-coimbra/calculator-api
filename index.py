@@ -11,7 +11,8 @@ def display(request):
 
 
 @app.route("/download/<filename:str>")
-def display(request, filename: str):
+def download(request, filename: str):
+    
     return response.file(filename)
 
 
