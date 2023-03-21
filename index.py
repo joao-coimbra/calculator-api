@@ -16,7 +16,7 @@ def ador(request, filename: str):
     try:
         return response.file('static/'+filename)
     except Exception:
-        return response.text('The file could not be found', status=404)
+        return response.json({'message':'The file could not be found'}, status=404)
 
 
 if __name__ == "__main__":
