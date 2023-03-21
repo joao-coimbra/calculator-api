@@ -11,12 +11,9 @@ def display(request):
 
 
 # string -> str, Sanic in Vercel dont support str, str in Sanic ^21
-@app.route("/download/<filename:string>")
+@app.route("/download/<filename:str>")
 def ador(request, filename: str):
-    try:
-        return response.file('static/'+filename)
-    except Exception:
-        return response.json({'message':'The file could not be found'}, status=404)
+    return response.file('static/'+filename)
 
 
 if __name__ == "__main__":
