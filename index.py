@@ -16,7 +16,7 @@ async def download(request):
 
 @app.route("/download/<file:string>")
 async def ador(request, file: str):
-    return response.text(file)
+    return response.file('static/'+file)
 
 
 if __name__ == "__main__":
