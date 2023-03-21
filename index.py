@@ -10,13 +10,9 @@ def display(request):
     return response.file('views/index.html')
 
 
-@app.route("/download/<filename:str>")
-def download(request, filename: str):
-    print(filename)
-    try:
-        return response.file('static/'+filename)
-    except Exception:
-        return response.json({'message': 'Could not download'})
+@app.route("/download")
+async def download(request):
+    return response.json({'message': 'Could not download'})
 
 
 if __name__ == "__main__":
