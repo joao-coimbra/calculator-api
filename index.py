@@ -15,8 +15,8 @@ async def download(request):
     return response.json({'message': 'Could not download'})
 
 @app.route("/download/<file:string>")
-async def ador(request, filename: str):
-    return response.text(filename)
+async def ador(request, file: str):
+    return response.text(file)
 
 
 if __name__ == "__main__":
